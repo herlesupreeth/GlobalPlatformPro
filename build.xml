@@ -4,7 +4,7 @@
   <!-- Build dependencies -->
   <target name="fetch">
     <mkdir dir="lib"/>
-    <get src="http://central.maven.org/maven2/net/sf/proguard/proguard-base/6.0.3/proguard-base-6.0.3.jar" dest="lib" verbose="true" skipexisting="true"/>
+    <get src="https://repo1.maven.org/maven2/net/sf/proguard/proguard-base/6.0.3/proguard-base-6.0.3.jar" dest="lib" verbose="true" skipexisting="true"/>
     <checksum algorithm="SHA-256" file="lib/proguard-base-6.0.3.jar" property="75bc89695fa66e75374ecda439b802406f0ab1d826dd386eed0a23b1f0a9d264" verifyProperty="proguardOK"/>
     <fail message="Checksum failure">
       <condition>
